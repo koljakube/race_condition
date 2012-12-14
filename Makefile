@@ -1,6 +1,6 @@
 CC=gcc
-CFLAGS=-c -Wall
-LDFLAGS=-pthreads
+CFLAGS=-c -Wall -pthread
+LDFLAGS=-pthread
 
 all: race_condition
 	
