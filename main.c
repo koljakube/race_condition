@@ -35,6 +35,7 @@ int main(int argc, const char** argv) {
   int err = create_threads(threads, NUM_THREADS, count_max);
   if (err != 0) {
     printf("Could not create threads.\n");
+    return EXIT_FAILURE;
   }
   
   join_threads(threads, NUM_THREADS);
