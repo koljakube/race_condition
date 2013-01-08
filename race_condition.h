@@ -6,5 +6,5 @@ typedef unsigned long int counter_t;
 
 volatile counter_t in;
 
-int create_threads(pthread_t* threads, size_t thread_count, counter_t count_max);
+int create_threads(pthread_t* threads, size_t thread_count, counter_t* count_max_p);
 void join_threads(pthread_t* threads, size_t thread_count);
